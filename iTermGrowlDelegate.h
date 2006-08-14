@@ -1,5 +1,5 @@
 // -*- mode:objc -*- vim: filetype=objcpp:
-// $Id: iTermGrowlDelegate.h,v 1.5.2.2 2006-08-13 20:58:40 dnedrow Exp $
+// $Id: iTermGrowlDelegate.h,v 1.5.2.3 2006-08-14 17:54:18 dnedrow Exp $
 //
 /*
  **  iTermGrowlDelegate.h
@@ -34,7 +34,7 @@
  **
  **      Example usage:
  **
- **          [gd growlNotify: @"Bell"
+ **          [gd growlNotify: @"This is the title"
  **          withDescription: @"This is the description"
  **          andNotification: @"Bells"];
  **
@@ -58,6 +58,11 @@
 
 #define OURGROWLAPPNAME  @"iTerm"
 #define DEFAULTNOTIFICATION @"Miscellaneous"
+#define OURNOTIFICATIONS	@"Bells",			\
+							@"Broken Pipes",	\
+							@"Miscellaneous",	\
+							@"Idle",			\
+							@"New Output"
 
 @interface iTermGrowlDelegate : NSObject <GrowlApplicationBridgeDelegate> {
 	BOOL enabled;

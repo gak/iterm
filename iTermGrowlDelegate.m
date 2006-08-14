@@ -1,5 +1,5 @@
 // -*- mode:objc -*- vim: filetype=objcpp
-// $Id: iTermGrowlDelegate.m,v 1.6.2.2 2006-08-13 20:58:40 dnedrow Exp $
+// $Id: iTermGrowlDelegate.m,v 1.6.2.3 2006-08-14 17:54:18 dnedrow Exp $
 //
 /*
  **  iTermGrowlDelegate.m
@@ -55,13 +55,10 @@
 - (id) init {
 	if ((self = [super init])) {
 		
-		notifications = [NSArray arrayWithObjects: @"Bells",
-			@"Broken Pipes",
-			@"Miscellaneous",
-			@"Idle",
-			@"New Output",
+		notifications = [NSArray arrayWithObjects: 
+			OURNOTIFICATIONS,
 			nil];
-		
+
 		[GrowlApplicationBridge setGrowlDelegate: self];
 		[self registrationDictionaryForGrowl];
 		[self setEnabled: YES];
