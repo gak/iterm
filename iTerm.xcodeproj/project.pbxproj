@@ -256,7 +256,8 @@
 		BB0C15BF0A8FF59D00F8B34F /* iTermGrowlDelegate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = iTermGrowlDelegate.h; sourceTree = "<group>"; };
 		BB0C15C00A8FF59D00F8B34F /* iTermGrowlDelegate.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = iTermGrowlDelegate.m; sourceTree = "<group>"; };
 		BB4DFB500A900834008A5C33 /* Growl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Growl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBE7E2B60A900035002DBC11 /* Growl Framework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Growl Framework-Info.plist"; sourceTree = "<group>"; };
+		BB850B060A90173C00EB0441 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = License.txt; path = Growl/License.txt; sourceTree = "<group>"; };
+		BB850B0D0A90177800EB0441 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README; path = Growl/README; sourceTree = "<group>"; };
 		BBE7E2BC0A90010D002DBC11 /* CFGrowlAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = CFGrowlAdditions.h; path = Growl/CFGrowlAdditions.h; sourceTree = "<group>"; };
 		BBE7E2BD0A90010D002DBC11 /* GrowlApplicationBridge-Carbon.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "GrowlApplicationBridge-Carbon.h"; path = "Growl/GrowlApplicationBridge-Carbon.h"; sourceTree = "<group>"; };
 		BBE7E2BE0A90010D002DBC11 /* GrowlApplicationBridge.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = GrowlApplicationBridge.h; path = Growl/GrowlApplicationBridge.h; sourceTree = "<group>"; };
@@ -457,7 +458,6 @@
 				0464AB27006CD2EC7F000001 /* Supporting Files */,
 				0464AB2E006CD2EC7F000001 /* External Frameworks and Libraries */,
 				0464AB32006CD2EC7F000001 /* Products */,
-				BBE7E2B60A900035002DBC11 /* Growl Framework-Info.plist */,
 			);
 			name = JTerminal;
 			sourceTree = "<group>";
@@ -601,9 +601,11 @@
 		BB0C15BE0A8FF55500F8B34F /* Growl Framework */ = {
 			isa = PBXGroup;
 			children = (
+				BB850B060A90173C00EB0441 /* License.txt */,
 				BBE7E2DE0A900152002DBC11 /* C Files */,
 				BBE7E2AC0A8FFFB2002DBC11 /* Headers */,
 				BBE7E2AB0A8FFFA1002DBC11 /* Classes */,
+				BB850B0D0A90177800EB0441 /* README */,
 			);
 			name = "Growl Framework";
 			sourceTree = "<group>";
