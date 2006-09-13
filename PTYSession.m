@@ -329,17 +329,17 @@ static NSImage *warningImage;
     if (EXIT) return;
     
     EXIT = YES;
-	
+
+    [gd growlNotify:@"Broken Pipe"
+    withDescription:[@"Session terminates in " stringByAppendingString:[self name]] 
+    andNotification:@"Broken Pipes"];
+    
 	if (autoClose)
         [parent closeSession:self];
     else 
     {
         [self setName:[NSString stringWithFormat:@"[%@]",[self name]]];
         [tabViewItem setLabelAttributes: deadStateAttribute];
-
-		[gd growlNotify:@"Broken Pipe"
-		withDescription:[@"Broken Pipe in " stringByAppendingString:[self name]] 
-		andNotification:@"Broken Pipes"];
     }				
     	
 }

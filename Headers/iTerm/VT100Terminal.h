@@ -1,5 +1,5 @@
 // -*- mode:objc -*-
-// $Id: VT100Terminal.h,v 1.15 2006-03-03 22:30:38 ujwal Exp $
+// $Id: VT100Terminal.h,v 1.15.2.1 2006-09-13 00:08:04 yfabian Exp $
 /*
  **  VT100Terminal.h
  **
@@ -119,6 +119,8 @@
 // Toggle between ansi/vt52
 #define STRICT_ANSI_MODE		4000
 
+// iTerm extension
+#define ITERM_GROWL     5000
 
 #define VT100CSIPARAM_MAX    16
 

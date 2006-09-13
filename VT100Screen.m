@@ -1,5 +1,5 @@
 // -*- mode:objc -*-
-// $Id: VT100Screen.m,v 1.238.2.1 2006-08-13 20:42:48 dnedrow Exp $
+// $Id: VT100Screen.m,v 1.238.2.2 2006-09-13 00:08:03 yfabian Exp $
 //
 /*
  **  VT100Screen.m
@@ -772,6 +772,14 @@ static screen_char_t *incrementLinePointer(screen_char_t *buf_start, screen_char
     case XTERMCC_INSLN: [self insertLines:token.u.csi.p[0]]; break;
     case XTERMCC_DELCH: [self deleteCharacters:token.u.csi.p[0]]; break;
     case XTERMCC_DELLN: [self deleteLines:token.u.csi.p[0]]; break;
+
+    case ITERM_GROWL:
+        if (GROWL) {
+            [gd growlNotify:[[SESSION name] stringByAppendingString:@" sends alert"]
+            withDescription:token.u.string
+            andNotification:@"Bells"];
+        }
+        break;
         
 
     default:
