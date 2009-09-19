@@ -32,7 +32,6 @@
 #define DEBUG_METHOD_TRACE    0
 
 #import <iTerm/iTermController.h>
-#import <iTerm/PreferencePanel.h>
 #import <iTerm/PseudoTerminal.h>
 #import <iTerm/PTYSession.h>
 #import <iTerm/VT100Screen.h>

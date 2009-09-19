@@ -37,7 +37,7 @@
 #import <iTerm/PTYSession.h>
 #import <iTerm/VT100Screen.h>
 #import <iTerm/FindPanelWindowController.h>
-#import <iTerm/PreferencePanel.h>
+#import <iTerm/Preferences.h>
 #import <iTerm/PTYScrollView.h>
 #import <iTerm/PTYTask.h>
 #import <iTerm/iTermController.h>
@@ -67,8 +67,8 @@ static float strokeWidth, boldStrokeWidth;
     [reverseCursorImage compositeToPoint:NSMakePoint(2,0) operation:NSCompositePlusLighter];
     [aCursorImage unlockFocus];
     textViewCursor = [[NSCursor alloc] initWithImage:aCursorImage hotSpot:hotspot];
-    strokeWidth = [[PreferencePanel sharedInstance] strokeWidth];
-    boldStrokeWidth = [[PreferencePanel sharedInstance] boldStrokeWidth];
+    strokeWidth = [[Preferences shared] strokeWidth];
+    boldStrokeWidth = [[Preferences shared] boldStrokeWidth];
 }
 
 + (NSCursor *) textViewCursor
@@ -907,7 +907,7 @@ static float strokeWidth, boldStrokeWidth;
 		}
 	}
 	
-	if([[PreferencePanel sharedInstance] pasteFromClipboard])
+	if([[Preferences shared] pasteFromClipboard])
 		[self paste: nil];
 	else
 		[self pasteSelection: nil];
@@ -1148,7 +1148,7 @@ static float strokeWidth, boldStrokeWidth;
 {
 	//NSLog(@"%s: 0x%x", __PRETTY_FUNCTION__, self);
 	
-	if([[PreferencePanel sharedInstance] focusFollowsMouse])
+	if([[Preferences shared] focusFollowsMouse])
 		[[self window] makeKeyWindow];
 }
 
@@ -1368,7 +1368,7 @@ static float strokeWidth, boldStrokeWidth;
 			 [event clickCount] < 2 && !mouseDragged) 
 	{		
 		startX=-1;
-        if(([event modifierFlags] & NSCommandKeyMask) && [[PreferencePanel sharedInstance] cmdSelection] &&
+        if(([event modifierFlags] & NSCommandKeyMask) && [[Preferences shared] cmdSelection] &&
            [mouseDownEvent locationInWindow].x == [event locationInWindow].x &&
            [mouseDownEvent locationInWindow].y == [event locationInWindow].y)
         {
@@ -1385,7 +1385,7 @@ static float strokeWidth, boldStrokeWidth;
 	
 	if (startX > -1 && _delegate) {
 		// if we want to copy our selection, do so
-		if([[PreferencePanel sharedInstance] copySelection])
+		if([[Preferences shared] copySelection])
 			[self copy: self];
 	}
 	
@@ -1757,7 +1757,7 @@ static float strokeWidth, boldStrokeWidth;
 
 - (void) searchInBrowser:(id)sender
 {
-	[self _openURL: [[NSString stringWithFormat:[[PreferencePanel sharedInstance] searchCommand], [self selectedText]] stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding]];
+	[self _openURL: [[NSString stringWithFormat:[[Preferences shared] searchCommand], [self selectedText]] stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding]];
 }
 
 //
@@ -2419,7 +2419,7 @@ static float strokeWidth, boldStrokeWidth;
 			}
 			[[[self defaultCursorColor] colorWithAlphaComponent: alpha] set];
 
-			switch ([[PreferencePanel sharedInstance] cursorType]) {
+			switch ([[Preferences shared] cursorType]) {
 				case CURSOR_BOX:
 					// draw the box
 					if([[self window] isKeyWindow]) {
@@ -2558,7 +2558,7 @@ static float strokeWidth, boldStrokeWidth;
 	int width = [dataSource width];
 	
 	// grab our preference for extra characters to be included in a word
-	wordChars = [[PreferencePanel sharedInstance] wordChars];
+	wordChars = [[Preferences shared] wordChars];
 	if(wordChars == nil)
 		wordChars = @"";		
 	// find the beginning of the word
@@ -2851,7 +2851,7 @@ static float strokeWidth, boldStrokeWidth;
 	
 	url = [NSURL URLWithString:trimmedURLString];
 
-	TreeNode *bm = [[PreferencePanel sharedInstance] handlerBookmarkForURL: [url scheme]];
+	TreeNode *bm = [[Preferences shared] handlerBookmarkForURL: [url scheme]];
 	
 	//NSLog(@"Got the URL:%@\n%@", [url scheme], bm);
 	if (bm != nil) 

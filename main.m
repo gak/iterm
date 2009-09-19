@@ -9,7 +9,6 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <iTerm/PreferencePanel.h>
 
 int main(int argc, const char *argv[])
 {

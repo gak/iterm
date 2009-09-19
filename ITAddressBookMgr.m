@@ -28,7 +28,6 @@
 
 #import "ITAddressBookMgr.h"
 
-#import <iTerm/PreferencePanel.h>
 #import <iTerm/Tree.h>
 #import <iTerm/iTermTerminalProfileMgr.h>
 #import <iTerm/iTermKeyBindingMgr.h>

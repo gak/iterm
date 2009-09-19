@@ -33,7 +33,7 @@
 
 #define MAXRW 2048
 
-#import <Foundation/Foundation.h>
+#import <Cocoa/Cocoa.h>
 
 #include <unistd.h>
 #include <util.h>
@@ -41,7 +41,6 @@
 #include <sys/select.h>
 
 #import <iTerm/PTYTask.h>
-#import <iTerm/PreferencePanel.h>
 
 #include <dlfcn.h>
 #include <sys/mount.h>

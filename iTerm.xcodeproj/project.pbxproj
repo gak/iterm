@@ -16,7 +16,7 @@
 		874205FA0564168A00CFC3F1 /* PTYScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 872EBC6004E42E320073D10E /* PTYScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		874205FB0564168A00CFC3F1 /* VT100Terminal.h in Headers */ = {isa = PBXBuildFile; fileRef = 872EBC6104E42E320073D10E /* VT100Terminal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		874205FC0564168A00CFC3F1 /* iTermController.h in Headers */ = {isa = PBXBuildFile; fileRef = 872EBC6204E42E320073D10E /* iTermController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		874205FE0564168A00CFC3F1 /* PreferencePanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 872EBC6504E42E320073D10E /* PreferencePanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		874205FE0564168A00CFC3F1 /* Preferences.h in Headers */ = {isa = PBXBuildFile; fileRef = 872EBC6504E42E320073D10E /* Preferences.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		874205FF0564168A00CFC3F1 /* PTYSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 872EBC6604E42E320073D10E /* PTYSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		874206000564168A00CFC3F1 /* FindPanelWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 872EBC6804E42E320073D10E /* FindPanelWindowController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		874206020564168A00CFC3F1 /* iTerm.h in Headers */ = {isa = PBXBuildFile; fileRef = 872EBC6A04E42E320073D10E /* iTerm.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -36,7 +36,6 @@
 		874206160564168A00CFC3F1 /* newwin.png in Resources */ = {isa = PBXBuildFile; fileRef = FB896717038D935801F955DB /* newwin.png */; };
 		874206170564168A00CFC3F1 /* iTerm.scriptSuite in Resources */ = {isa = PBXBuildFile; fileRef = DD48F1C703EBB1C400A8A065 /* iTerm.scriptSuite */; };
 		874206180564168A00CFC3F1 /* iTerm.scriptTerminology in Resources */ = {isa = PBXBuildFile; fileRef = DD48F1CC03EBB20500A8A065 /* iTerm.scriptTerminology */; };
-		874206190564168A00CFC3F1 /* iTerm.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB151F2903648AC401F955DB /* iTerm.strings */; };
 		8742061E0564168A00CFC3F1 /* iTerm-Aqua.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD9C1AE2051F45C000A8A065 /* iTerm-Aqua.jpg */; };
 		874206200564168A00CFC3F1 /* PseudoTerminal.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD0AD0A0337A5B701F955DB /* PseudoTerminal.m */; };
 		874206210564168A00CFC3F1 /* PTYScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CF755F026DDA6303A80106 /* PTYScrollView.m */; };
@@ -46,7 +45,7 @@
 		874206250564168A00CFC3F1 /* VT100Terminal.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CF7563026DDA6303A80106 /* VT100Terminal.m */; };
 		874206260564168A00CFC3F1 /* iTermController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A66F030272453F03A80106 /* iTermController.m */; };
 		874206270564168A00CFC3F1 /* NSStringITerm.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E901A202743CA303A80106 /* NSStringITerm.m */; };
-		874206280564168A00CFC3F1 /* PreferencePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB019DE103670C6501F955DB /* PreferencePanel.m */; };
+		874206280564168A00CFC3F1 /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = FB019DE103670C6501F955DB /* Preferences.m */; };
 		874206290564168A00CFC3F1 /* PTYSession.m in Sources */ = {isa = PBXBuildFile; fileRef = F52ED8DD037F0A7D01A8A066 /* PTYSession.m */; };
 		8742062A0564168A00CFC3F1 /* PTYTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E533B403B2959201A8A066 /* PTYTabView.m */; };
 		8742062C0564168A00CFC3F1 /* PTYWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F56B230B03A1B36701A8A066 /* PTYWindow.m */; };
@@ -69,12 +68,18 @@
 		8787B0DA05FD160F00901149 /* iTermProfileWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8787B0D805FD160F00901149 /* iTermProfileWindowController.m */; };
 		8787B14005FD191400901149 /* iTermProfileWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8787B13F05FD191400901149 /* iTermProfileWindowController.h */; };
 		9325FF480FB54DF1004EC67C /* PseudoTerminal.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9325FF3C0FB54DF1004EC67C /* PseudoTerminal.xib */; };
-		9325FF490FB54DF1004EC67C /* ProfilesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9325FF3E0FB54DF1004EC67C /* ProfilesWindow.xib */; };
-		9325FF4A0FB54DF1004EC67C /* PreferencePanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9325FF400FB54DF1004EC67C /* PreferencePanel.xib */; };
 		9325FF4B0FB54DF1004EC67C /* ITConfigPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9325FF420FB54DF1004EC67C /* ITConfigPanel.xib */; };
 		9325FF4C0FB54DF1004EC67C /* FindPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9325FF440FB54DF1004EC67C /* FindPanel.xib */; };
-		9325FF4D0FB54DF1004EC67C /* Bookmarks.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9325FF460FB54DF1004EC67C /* Bookmarks.xib */; };
 		9325FF500FB54E00004EC67C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9325FF4E0FB54E00004EC67C /* MainMenu.xib */; };
+		933F93D11064C714007107D8 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 933F93CF1064C714007107D8 /* Preferences.xib */; };
+		9387D8A11064CB2B0002ECDD /* UKPrefsPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 931294C11064C4D00020F89A /* UKPrefsPanel.m */; };
+		9387D8A21064CB310002ECDD /* UKPrefsPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 931294C51064C4DA0020F89A /* UKPrefsPanel.h */; };
+		93F179E71064D8E600C33626 /* PrefsAdvanced.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9387D8BA1064CF260002ECDD /* PrefsAdvanced.tiff */; };
+		93F179E81064D8E600C33626 /* PrefsDisplay.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9387D8BD1064CF260002ECDD /* PrefsDisplay.tiff */; };
+		93F179E91064D8E600C33626 /* PrefsBookmarks.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9387D8BC1064CF260002ECDD /* PrefsBookmarks.tiff */; };
+		93F179EA1064D8E600C33626 /* PrefsGeneral.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9387D8BB1064CF260002ECDD /* PrefsGeneral.tiff */; };
+		93F179EB1064D8E600C33626 /* PrefsKeyboard.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 93F179E51064D7E900C33626 /* PrefsKeyboard.tiff */; };
+		93F179EC1064D8E600C33626 /* PrefsTerminal.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9387D8B91064CF260002ECDD /* PrefsTerminal.tiff */; };
 		DD02573F09CB9399008F320C /* PSMAquaTabStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = DD02572409CB9398008F320C /* PSMAquaTabStyle.h */; };
 		DD02574009CB9399008F320C /* PSMAquaTabStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = DD02572509CB9398008F320C /* PSMAquaTabStyle.m */; };
 		DD02574109CB9399008F320C /* PSMMetalTabStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = DD02572609CB9398008F320C /* PSMMetalTabStyle.h */; };
@@ -125,7 +130,6 @@
 		F62D15F30AA64B2F0075A287 /* PSMAdiumTabStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = F62D15EF0AA64B2F0075A287 /* PSMAdiumTabStyle.m */; };
 		F62D15F40AA64B2F0075A287 /* PSMTabDragWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = F62D15F00AA64B2F0075A287 /* PSMTabDragWindow.h */; };
 		F62D15F50AA64B2F0075A287 /* PSMTabDragWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F62D15F10AA64B2F0075A287 /* PSMTabDragWindow.m */; };
-		F638C2620AD483BF00BEE23D /* iTerm.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB151F2903648AC401F955DB /* iTerm.strings */; };
 		F6441F720E748404000EC682 /* CarbonHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = F6441F620E748404000EC682 /* CarbonHelpers.h */; };
 		F6441F730E748404000EC682 /* CGSAccessibility.h in Headers */ = {isa = PBXBuildFile; fileRef = F6441F630E748404000EC682 /* CGSAccessibility.h */; };
 		F6441F740E748404000EC682 /* CGSCIFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = F6441F640E748404000EC682 /* CGSCIFilter.h */; };
@@ -246,7 +250,7 @@
 		872EBC6004E42E320073D10E /* PTYScrollView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = PTYScrollView.h; path = Headers/iTerm/PTYScrollView.h; sourceTree = "<group>"; };
 		872EBC6104E42E320073D10E /* VT100Terminal.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = VT100Terminal.h; path = Headers/iTerm/VT100Terminal.h; sourceTree = "<group>"; };
 		872EBC6204E42E320073D10E /* iTermController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = iTermController.h; path = Headers/iTerm/iTermController.h; sourceTree = "<group>"; };
-		872EBC6504E42E320073D10E /* PreferencePanel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = PreferencePanel.h; path = Headers/iTerm/PreferencePanel.h; sourceTree = "<group>"; };
+		872EBC6504E42E320073D10E /* Preferences.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Preferences.h; path = Headers/iTerm/Preferences.h; sourceTree = "<group>"; };
 		872EBC6604E42E320073D10E /* PTYSession.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = PTYSession.h; path = Headers/iTerm/PTYSession.h; sourceTree = "<group>"; };
 		872EBC6804E42E320073D10E /* FindPanelWindowController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = FindPanelWindowController.h; path = Headers/iTerm/FindPanelWindowController.h; sourceTree = "<group>"; };
 		872EBC6A04E42E320073D10E /* iTerm.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = iTerm.h; path = Headers/iTerm/iTerm.h; sourceTree = "<group>"; };
@@ -257,13 +261,19 @@
 		8786A96E052CEC220073D10E /* script.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = script.png; path = images/script.png; sourceTree = "<group>"; };
 		8787B0D805FD160F00901149 /* iTermProfileWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTermProfileWindowController.m; sourceTree = "<group>"; };
 		8787B13F05FD191400901149 /* iTermProfileWindowController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = iTermProfileWindowController.h; path = Headers/iTerm/iTermProfileWindowController.h; sourceTree = "<group>"; };
+		931294C11064C4D00020F89A /* UKPrefsPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKPrefsPanel.m; sourceTree = "<group>"; };
+		931294C51064C4DA0020F89A /* UKPrefsPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKPrefsPanel.h; sourceTree = "<group>"; };
 		9325FF3D0FB54DF1004EC67C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/PseudoTerminal.xib; sourceTree = "<group>"; };
-		9325FF3F0FB54DF1004EC67C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/ProfilesWindow.xib; sourceTree = "<group>"; };
-		9325FF410FB54DF1004EC67C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/PreferencePanel.xib; sourceTree = "<group>"; };
 		9325FF430FB54DF1004EC67C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/ITConfigPanel.xib; sourceTree = "<group>"; };
 		9325FF450FB54DF1004EC67C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/FindPanel.xib; sourceTree = "<group>"; };
-		9325FF470FB54DF1004EC67C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Bookmarks.xib; sourceTree = "<group>"; };
 		9325FF4F0FB54E00004EC67C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		933F93D01064C714007107D8 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Preferences.xib; sourceTree = "<group>"; };
+		9387D8B91064CF260002ECDD /* PrefsTerminal.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = PrefsTerminal.tiff; path = images/PrefsTerminal.tiff; sourceTree = "<group>"; };
+		9387D8BA1064CF260002ECDD /* PrefsAdvanced.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = PrefsAdvanced.tiff; path = images/PrefsAdvanced.tiff; sourceTree = "<group>"; };
+		9387D8BB1064CF260002ECDD /* PrefsGeneral.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = PrefsGeneral.tiff; path = images/PrefsGeneral.tiff; sourceTree = "<group>"; };
+		9387D8BC1064CF260002ECDD /* PrefsBookmarks.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = PrefsBookmarks.tiff; path = images/PrefsBookmarks.tiff; sourceTree = "<group>"; };
+		9387D8BD1064CF260002ECDD /* PrefsDisplay.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = PrefsDisplay.tiff; path = images/PrefsDisplay.tiff; sourceTree = "<group>"; };
+		93F179E51064D7E900C33626 /* PrefsKeyboard.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = PrefsKeyboard.tiff; path = images/PrefsKeyboard.tiff; sourceTree = "<group>"; };
 		DD02572409CB9398008F320C /* PSMAquaTabStyle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PSMAquaTabStyle.h; sourceTree = "<group>"; };
 		DD02572509CB9398008F320C /* PSMAquaTabStyle.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PSMAquaTabStyle.m; sourceTree = "<group>"; };
 		DD02572609CB9398008F320C /* PSMMetalTabStyle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PSMMetalTabStyle.h; sourceTree = "<group>"; };
@@ -388,11 +398,10 @@
 		F6E708B80A9D0EA400D0C4EF /* PSMTabDragAssistant.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PSMTabDragAssistant.m; sourceTree = "<group>"; };
 		F6E708B90A9D0EA400D0C4EF /* PSMUnifiedTabStyle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PSMUnifiedTabStyle.h; sourceTree = "<group>"; };
 		F6E708BA0A9D0EA400D0C4EF /* PSMUnifiedTabStyle.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PSMUnifiedTabStyle.m; sourceTree = "<group>"; };
-		FB019DE103670C6501F955DB /* PreferencePanel.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PreferencePanel.m; sourceTree = "<group>"; };
+		FB019DE103670C6501F955DB /* Preferences.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Preferences.m; sourceTree = "<group>"; };
 		FB094A14033D58AE01F955DB /* addressbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = addressbook.png; path = images/addressbook.png; sourceTree = "<group>"; };
 		FB094A16033D58B601F955DB /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = close.png; path = images/close.png; sourceTree = "<group>"; };
 		FB094A18033D58BD01F955DB /* new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = new.png; path = images/new.png; sourceTree = "<group>"; };
-		FB151F2603648AB401F955DB /* iTerm.strings */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = iTerm.strings; path = English.lproj/iTerm.strings; sourceTree = "<group>"; };
 		FB47BCC403686CAC01F955DB /* exec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = exec.png; path = images/exec.png; sourceTree = "<group>"; };
 		FB754C5F036EFC5301F955DB /* config.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = config.png; path = images/config.png; sourceTree = "<group>"; };
 		FB896717038D935801F955DB /* newwin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = newwin.png; path = images/newwin.png; sourceTree = "<group>"; };
@@ -456,6 +465,7 @@
 		0464AB0E006CD2EC7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				931294C11064C4D00020F89A /* UKPrefsPanel.m */,
 				DD4BAB7C0470C44C00A8A065 /* FindPanelWindowController.m */,
 				DDF0FD64062916F70080EF74 /* iTermApplication.m */,
 				20D5CC6404E7AA0500000106 /* iTermApplicationDelegate.m */,
@@ -470,7 +480,7 @@
 				20B8891A04E924CD00000106 /* ITConfigPanelController.m */,
 				20B8892B04E9342100000106 /* ITViewLocalizer.m */,
 				E8E901A202743CA303A80106 /* NSStringITerm.m */,
-				FB019DE103670C6501F955DB /* PreferencePanel.m */,
+				FB019DE103670C6501F955DB /* Preferences.m */,
 				FBD0AD0A0337A5B701F955DB /* PseudoTerminal.m */,
 				2076B15804E8817300000106 /* PTToolbarController.m */,
 				E8CF755F026DDA6303A80106 /* PTYScrollView.m */,
@@ -489,6 +499,7 @@
 		0464AB15006CD2EC7F000001 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				931294C51064C4DA0020F89A /* UKPrefsPanel.h */,
 				872EBC6B04E42E320073D10E /* charmaps.h */,
 				872EBC6804E42E320073D10E /* FindPanelWindowController.h */,
 				872EBC6A04E42E320073D10E /* iTerm.h */,
@@ -505,7 +516,7 @@
 				20B8891904E924CD00000106 /* ITConfigPanelController.h */,
 				20B8892A04E9342100000106 /* ITViewLocalizer.h */,
 				872EBC5304E42E320073D10E /* NSStringITerm.h */,
-				872EBC6504E42E320073D10E /* PreferencePanel.h */,
+				872EBC6504E42E320073D10E /* Preferences.h */,
 				872EBC6C04E42E320073D10E /* PseudoTerminal.h */,
 				872EBC6004E42E320073D10E /* PTYScrollView.h */,
 				872EBC6604E42E320073D10E /* PTYSession.h */,
@@ -532,13 +543,17 @@
 		0464AB22006CD2EC7F000001 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				93F179E51064D7E900C33626 /* PrefsKeyboard.tiff */,
+				9387D8B91064CF260002ECDD /* PrefsTerminal.tiff */,
+				9387D8BA1064CF260002ECDD /* PrefsAdvanced.tiff */,
+				9387D8BB1064CF260002ECDD /* PrefsGeneral.tiff */,
+				9387D8BC1064CF260002ECDD /* PrefsBookmarks.tiff */,
+				9387D8BD1064CF260002ECDD /* PrefsDisplay.tiff */,
+				933F93CF1064C714007107D8 /* Preferences.xib */,
 				9325FF4E0FB54E00004EC67C /* MainMenu.xib */,
 				9325FF3C0FB54DF1004EC67C /* PseudoTerminal.xib */,
-				9325FF3E0FB54DF1004EC67C /* ProfilesWindow.xib */,
-				9325FF400FB54DF1004EC67C /* PreferencePanel.xib */,
 				9325FF420FB54DF1004EC67C /* ITConfigPanel.xib */,
 				9325FF440FB54DF1004EC67C /* FindPanel.xib */,
-				9325FF460FB54DF1004EC67C /* Bookmarks.xib */,
 				E8EDCE69015E0A5703000001 /* iTerm.icns */,
 				FBBB8B60039FC04E01F955DB /* iTerm.png */,
 				DD9C1AE2051F45C000A8A065 /* iTerm-Aqua.jpg */,
@@ -555,7 +570,6 @@
 				F6C9AFEF0EA70D0200D318A8 /* sort.png */,
 				DD48F1C703EBB1C400A8A065 /* iTerm.scriptSuite */,
 				DD48F1CC03EBB20500A8A065 /* iTerm.scriptTerminology */,
-				FB151F2903648AC401F955DB /* iTerm.strings */,
 				DD57633005653C2E00F1905E /* iTerm_Framework.plist */,
 				DD57633605653C5F00F1905E /* iTerm.plist */,
 			);
@@ -565,7 +579,6 @@
 		0464AB27006CD2EC7F000001 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FBDF6B63042A6B3101F955DB /* website */,
 				F500A65D0395269C01A8A066 /* Changelog */,
 				DD8CF2DD03CDD34B00A8A065 /* iTerm Help */,
 				DDB79A9A0612BBBF00EAE159 /* Profiles.plist */,
@@ -739,13 +752,6 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
-		FBDF6B63042A6B3101F955DB /* website */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = website;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -762,7 +768,7 @@
 				874205FA0564168A00CFC3F1 /* PTYScrollView.h in Headers */,
 				874205FB0564168A00CFC3F1 /* VT100Terminal.h in Headers */,
 				874205FC0564168A00CFC3F1 /* iTermController.h in Headers */,
-				874205FE0564168A00CFC3F1 /* PreferencePanel.h in Headers */,
+				874205FE0564168A00CFC3F1 /* Preferences.h in Headers */,
 				874205FF0564168A00CFC3F1 /* PTYSession.h in Headers */,
 				874206000564168A00CFC3F1 /* FindPanelWindowController.h in Headers */,
 				874206020564168A00CFC3F1 /* iTerm.h in Headers */,
@@ -808,6 +814,7 @@
 				F6441F7F0E748404000EC682 /* CGSTransitions.h in Headers */,
 				F6441F800E748404000EC682 /* CGSWindow.h in Headers */,
 				F6441F810E748404000EC682 /* CGSWorkspace.h in Headers */,
+				9387D8A21064CB310002ECDD /* UKPrefsPanel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -951,7 +958,6 @@
 				874206160564168A00CFC3F1 /* newwin.png in Resources */,
 				874206170564168A00CFC3F1 /* iTerm.scriptSuite in Resources */,
 				874206180564168A00CFC3F1 /* iTerm.scriptTerminology in Resources */,
-				874206190564168A00CFC3F1 /* iTerm.strings in Resources */,
 				8742061E0564168A00CFC3F1 /* iTerm-Aqua.jpg in Resources */,
 				DDB79A9B0612BBBF00EAE159 /* Profiles.plist in Resources */,
 				DD02577409CB93C2008F320C /* AquaTabClose_Front.tif in Resources */,
@@ -979,11 +985,9 @@
 				F6DA0AFD0AF066EE0098EFEB /* edit.png in Resources */,
 				F6C9AFF00EA70D0200D318A8 /* sort.png in Resources */,
 				9325FF480FB54DF1004EC67C /* PseudoTerminal.xib in Resources */,
-				9325FF490FB54DF1004EC67C /* ProfilesWindow.xib in Resources */,
-				9325FF4A0FB54DF1004EC67C /* PreferencePanel.xib in Resources */,
 				9325FF4B0FB54DF1004EC67C /* ITConfigPanel.xib in Resources */,
 				9325FF4C0FB54DF1004EC67C /* FindPanel.xib in Resources */,
-				9325FF4D0FB54DF1004EC67C /* Bookmarks.xib in Resources */,
+				933F93D11064C714007107D8 /* Preferences.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -991,11 +995,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F638C2620AD483BF00BEE23D /* iTerm.strings in Resources */,
 				8742064C0564169600CFC3F1 /* iTerm Help in Resources */,
 				8742064D0564169600CFC3F1 /* iTerm.icns in Resources */,
 				F6CDC4E70AE6D3E2005E7D4F /* folder.png in Resources */,
 				9325FF500FB54E00004EC67C /* MainMenu.xib in Resources */,
+				93F179E71064D8E600C33626 /* PrefsAdvanced.tiff in Resources */,
+				93F179E81064D8E600C33626 /* PrefsDisplay.tiff in Resources */,
+				93F179E91064D8E600C33626 /* PrefsBookmarks.tiff in Resources */,
+				93F179EA1064D8E600C33626 /* PrefsGeneral.tiff in Resources */,
+				93F179EB1064D8E600C33626 /* PrefsKeyboard.tiff in Resources */,
+				93F179EC1064D8E600C33626 /* PrefsTerminal.tiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1071,7 +1080,7 @@
 				874206250564168A00CFC3F1 /* VT100Terminal.m in Sources */,
 				874206260564168A00CFC3F1 /* iTermController.m in Sources */,
 				874206270564168A00CFC3F1 /* NSStringITerm.m in Sources */,
-				874206280564168A00CFC3F1 /* PreferencePanel.m in Sources */,
+				874206280564168A00CFC3F1 /* Preferences.m in Sources */,
 				874206290564168A00CFC3F1 /* PTYSession.m in Sources */,
 				8742062A0564168A00CFC3F1 /* PTYTabView.m in Sources */,
 				8742062C0564168A00CFC3F1 /* PTYWindow.m in Sources */,
@@ -1099,6 +1108,7 @@
 				F62D15F50AA64B2F0075A287 /* PSMTabDragWindow.m in Sources */,
 				F69E788D0AB7AC6D001EC0FF /* iTermGrowlDelegate.m in Sources */,
 				F6B077110ADDB7D400F4BB37 /* iTermBookmarkController.m in Sources */,
+				9387D8A11064CB2B0002ECDD /* UKPrefsPanel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1155,22 +1165,6 @@
 			name = PseudoTerminal.xib;
 			sourceTree = "<group>";
 		};
-		9325FF3E0FB54DF1004EC67C /* ProfilesWindow.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9325FF3F0FB54DF1004EC67C /* English */,
-			);
-			name = ProfilesWindow.xib;
-			sourceTree = "<group>";
-		};
-		9325FF400FB54DF1004EC67C /* PreferencePanel.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9325FF410FB54DF1004EC67C /* English */,
-			);
-			name = PreferencePanel.xib;
-			sourceTree = "<group>";
-		};
 		9325FF420FB54DF1004EC67C /* ITConfigPanel.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1187,20 +1181,20 @@
 			name = FindPanel.xib;
 			sourceTree = "<group>";
 		};
-		9325FF460FB54DF1004EC67C /* Bookmarks.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9325FF470FB54DF1004EC67C /* English */,
-			);
-			name = Bookmarks.xib;
-			sourceTree = "<group>";
-		};
 		9325FF4E0FB54E00004EC67C /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9325FF4F0FB54E00004EC67C /* English */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		933F93CF1064C714007107D8 /* Preferences.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				933F93D01064C714007107D8 /* English */,
+			);
+			name = Preferences.xib;
 			sourceTree = "<group>";
 		};
 		DD48F1CC03EBB20500A8A065 /* iTerm.scriptTerminology */ = {
@@ -1217,14 +1211,6 @@
 				DD8CF2DE03CDD34C00A8A065 /* iTerm Help */,
 			);
 			name = "iTerm Help";
-			sourceTree = "<group>";
-		};
-		FB151F2903648AC401F955DB /* iTerm.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FB151F2603648AB401F955DB /* iTerm.strings */,
-			);
-			name = iTerm.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

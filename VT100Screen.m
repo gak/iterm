@@ -41,7 +41,6 @@
 #import <iTerm/charmaps.h>
 #import <iTerm/PTYSession.h>
 #import <iTerm/PTYTask.h>
-#import <iTerm/PreferencePanel.h>
 #import <iTerm/iTermGrowlDelegate.h>
 #import <iTerm/iTermTerminalProfileMgr.h>
 #include <string.h>

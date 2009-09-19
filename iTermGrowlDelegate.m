@@ -29,7 +29,7 @@
  */
 
 #import <iTermGrowlDelegate.h>
-#import <PreferencePanel.h>
+#import <Preferences.h>
 
 /**
  **  The category is used to extend iTermGrowlDelegate with private methods.
@@ -94,7 +94,7 @@
 		return;
 	}
 
-    if ([[PreferencePanel sharedInstance] enableGrowl])
+    if ([[Preferences shared] enableGrowl])
         [GrowlApplicationBridge 
             notifyWithTitle: title
                 description: nil
@@ -113,7 +113,7 @@
 		return;
 	}
 	
-    if ([[PreferencePanel sharedInstance] enableGrowl])
+    if ([[Preferences shared] enableGrowl])
         [GrowlApplicationBridge 
             notifyWithTitle: title
                 description: description
@@ -133,7 +133,7 @@
 		return;
 	}
     
-    if ([[PreferencePanel sharedInstance] enableGrowl])
+    if ([[Preferences shared] enableGrowl])
         [GrowlApplicationBridge 
             notifyWithTitle: title
                 description: description
