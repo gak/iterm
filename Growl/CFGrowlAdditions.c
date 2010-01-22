@@ -8,8 +8,9 @@
 
 #include <Carbon/Carbon.h>
 #include "CFGrowlAdditions.h"
-#include <c.h>
 #include <unistd.h>
+
+#define MIN(a, b) ((a < b) ? a : b)
 
 static CFStringRef _CFURLAliasDataKey  = CFSTR("_CFURLAliasData");
 static CFStringRef _CFURLStringKey     = CFSTR("_CFURLString");
